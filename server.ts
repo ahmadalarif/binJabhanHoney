@@ -1,7 +1,7 @@
 
 import express from 'express';
 import type { Request, Response } from 'express';
-import { createServer as createViteServer } from 'vite';
+import * as vite from 'vite';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -11,6 +11,10 @@ const __dirname = path.dirname(__filename);
 
 const PORT = Number(process.env.PORT) || 3000;
 const DATA_FILE = path.join(__dirname, 'data.json');
+
+console.log('Starting server initialization...');
+console.log('Port:', PORT);
+console.log('Data file path:', DATA_FILE);
 
 // Initial Data Structure
 const initialData: any = {
@@ -174,11 +178,11 @@ async function startServer() {
 
   // --- VITE MIDDLEWARE ---
   if (process.env.NODE_ENV !== 'production') {
-    const vite = await createViteServer({
+    const viteInstance = await vite.createServer({
       server: { middlewareMode: true },
       appType: 'spa',
     });
-    app.use(vite.middlewares);
+    app.use(viteInstance.middlewares);
   } else {
     app.use(express.static('dist'));
     app.get('*', (req: Request, res: Response) => {
