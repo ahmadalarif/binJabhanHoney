@@ -1,0 +1,137 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": {
+        "en": "Dahyana Wild Honey",
+        "ar": "عسل ضهيانة البلدي"
+      },
+      "description": {
+        "en": "Rare wild honey harvested from the untouched valleys of Al-Baha. Known for its light floral notes and smooth texture. Lab-tested for purity and SFDA compliance.",
+        "ar": "عسل نادر مستخلص من الوديان البكر في منطقة الباحة. يتميز بنكهته الزهرية الخفيفة وقوامه الناعم. خضع للفحص المخبري للتأكد من نقائه وامتثاله لهيئة الغذاء والدواء."
+      },
+      "price": 110,
+      "category": "honey",
+      "image": "https://images.unsplash.com/photo-1587049352846-4a222e784d38?q=80&w=800&auto=format&fit=crop",
+      "origin": "Al-Baha, Saudi Arabia",
+      "availability": "in_stock",
+      "weightKg": 0.5
+    },
+    {
+      "id": "2",
+      "name": {
+        "en": "Sidr Honey",
+        "ar": "عسل السدر"
+      },
+      "description": {
+        "en": "Premium Sidr honey from Baha’s ancient Ziziphus trees. Rich amber color, thick consistency, and unmatched depth of flavor. Fully compliant with SFDA moisture and HMF standards.",
+        "ar": "عسل سدر بريميوم من أشجار السدر القديمة في الباحة. يتميز بلونه الكهرماني الغني وقوامه الكثيف وعمق نكهته الفريد. متوافق تمامًا مع معايير هيئة الغذاء والدواء للرطوبة وHMF."
+      },
+      "price": 240,
+      "category": "honey",
+      "image": "https://images.unsplash.com/photo-1558611997-d77901767664?q=80&w=800&auto=format&fit=crop",
+      "origin": "Baha, Saudi Arabia",
+      "availability": "in_stock",
+      "weightKg": 1
+    }
+  ],
+  "orders": [
+    {
+      "id": "BJ-7745",
+      "date": "2026-02-24",
+      "total": 110,
+      "status": "pending",
+      "items": [
+        {
+          "id": "1",
+          "name": {
+            "en": "Dahyana Wild Honey",
+            "ar": "عسل ضهيانة البلدي"
+          },
+          "description": {
+            "en": "Rare wild honey harvested from the untouched valleys of Al-Baha. Known for its light floral notes and smooth texture. Lab-tested for purity and SFDA compliance.",
+            "ar": "عسل نادر مستخلص من الوديان البكر في منطقة الباحة. يتميز بنكهته الزهرية الخفيفة وقوامه الناعم. خضع للفحص المخبري للتأكد من نقائه وامتثاله لهيئة الغذاء والدواء."
+          },
+          "price": 110,
+          "category": "honey",
+          "image": "https://images.unsplash.com/photo-1587049352846-4a222e784d38?q=80&w=800&auto=format&fit=crop",
+          "origin": "Al-Baha, Saudi Arabia",
+          "availability": "in_stock",
+          "weightKg": 0.5,
+          "quantity": 1
+        }
+      ],
+      "trackingNumber": "TRD-988163",
+      "lastUpdated": "2026-02-24T23:22:15.259Z",
+      "customer": {
+        "name": "Ahmad",
+        "phone": "0565606064",
+        "address": "KSA",
+        "city": "Jeddah",
+        "neighborhood": "AL Salhyah",
+        "shortCode": "jcbd8025"
+      }
+    }
+  ],
+  "users": [
+    {
+      "id": "u101",
+      "name": "Ahmed Al-Ghamdi",
+      "phone": "0551234567",
+      "role": "user",
+      "email": "ahmed@example.com"
+    },
+    {
+      "id": "u102",
+      "name": "Sara Bin Jabhan",
+      "phone": "0509876543",
+      "role": "user",
+      "email": "sara@example.com"
+    },
+    {
+      "id": "u1771975223891",
+      "phone": "admin",
+      "name": "Administrator",
+      "role": "admin"
+    },
+    {
+      "id": "u1771975277641",
+      "phone": "565606064",
+      "name": "Valued Customer",
+      "role": "user"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "1771975335271",
+      "title": {
+        "ar": "طلب جديد!",
+        "en": "New Order!"
+      },
+      "message": {
+        "ar": "تم استلام طلب جديد برقم BJ-7745 بقيمة 110 ر.س",
+        "en": "New order received #BJ-7745 with total 110 SAR"
+      },
+      "date": "2026-02-24T23:22:15.271Z",
+      "read": false,
+      "type": "order"
+    },
+    {
+      "id": "n1",
+      "title": {
+        "ar": "عرض خاص!",
+        "en": "Special Offer!"
+      },
+      "message": {
+        "ar": "خصم ٢٠٪ على عسل السدر الجبلي لفترة محدودة.",
+        "en": "20% off on Sidr Mountain Honey for a limited time."
+      },
+      "date": "2026-02-24T23:19:21.990Z",
+      "read": true,
+      "type": "offer"
+    }
+  ],
+  "settings": {
+    "customLogo": null
+  }
+}

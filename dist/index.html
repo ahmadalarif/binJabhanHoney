@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Bin Jabhan Honey | عسل بن جبهان - Premium Saudi Honey & Ghee</title>
+    <meta name="description" content="Discover the finest natural honey and traditional ghee from the mountains of Al-Baha, Saudi Arabia. Bin Jabhan Honey offers premium quality, 100% pure products delivered to your doorstep.">
+    <meta name="keywords" content="honey, saudi honey, al-baha honey, natural honey, organic honey, ghee, traditional ghee, bin jabhan, عسل, سمن, عسل الباحة, عسل طبيعي">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://binjabhan.com/">
+    <meta property="og:title" content="Bin Jabhan Honey | عسل بن جبهان - Premium Saudi Honey & Ghee">
+    <meta property="og:description" content="Pure natural honey and traditional ghee from the heart of Al-Baha. Experience the heritage of Saudi nature.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1589733901241-5d5d9b6ad8c4?q=80&w=1200&auto=format&fit=crop">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://binjabhan.com/">
+    <meta property="twitter:title" content="Bin Jabhan Honey | عسل بن جبهان">
+    <meta property="twitter:description" content="Pure natural honey and traditional ghee from the heart of Al-Baha.">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1589733901241-5d5d9b6ad8c4?q=80&w=1200&auto=format&fit=crop">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Store",
+      "name": "Bin Jabhan Honey",
+      "image": "https://images.unsplash.com/photo-1589733901241-5d5d9b6ad8c4?q=80&w=1200&auto=format&fit=crop",
+      "@id": "https://binjabhan.com",
+      "url": "https://binjabhan.com",
+      "telephone": "+966551234567",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Al-Baha Region",
+        "addressLocality": "Al-Baha",
+        "addressRegion": "Al-Baha",
+        "postalCode": "65511",
+        "addressCountry": "SA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 20.0129,
+        "longitude": 41.4677
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "sameAs": [
+        "https://www.instagram.com/binjabhan",
+        "https://twitter.com/binjabhan"
+      ]
+    }
+    </script>
+    
+    <!-- Mobile & Native App Meta Tags -->
+    <meta name="theme-color" content="#0f0f0f">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="https://picsum.photos/seed/bj-icon-192/192/192">
+    <link rel="manifest" href="/assets/manifest-DvDZINVT.json">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --sat: env(safe-area-inset-top);
+            --sar: env(safe-area-inset-right);
+            --sab: env(safe-area-inset-bottom);
+            --sal: env(safe-area-inset-left);
+            
+            /* Default Dark Theme Variables */
+            --bg-main: #0f0f0f;
+            --bg-surface: #141414;
+            --bg-alt: #1a1a1a;
+            --bg-input: #222222;
+            --text-primary: #f9fafb;
+            --text-secondary: #9ca3af;
+            --border-primary: rgba(255, 255, 255, 0.08);
+            --accent-gold: #d4af37;
+            --accent-gold-hover: #b8860b;
+        }
+
+        body.light-mode {
+            --bg-main: #f8f9fa;
+            --bg-surface: #ffffff;
+            --bg-alt: #f1f3f5;
+            --bg-input: #ffffff;
+            --text-primary: #1a1a1a;
+            --text-secondary: #4b5563;
+            --border-primary: rgba(0, 0, 0, 0.08);
+        }
+
+        * {
+            -webkit-user-select: none;
+            user-select: none;
+            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-primary);
+            -webkit-tap-highlight-color: transparent;
+            overscroll-behavior-y: none;
+            padding-bottom: env(safe-area-inset-bottom);
+        }
+
+        [dir="rtl"] {
+            font-family: 'Amiri', serif;
+        }
+
+        .honey-gradient {
+            background: linear-gradient(135deg, #d4af37 0%, #b8860b 100%);
+        }
+
+        .ribbon-label {
+            position: relative;
+            background: #d4af37;
+            color: black;
+            padding: 4px 12px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 0.7rem;
+            clip-path: polygon(100% 0, 95% 50%, 100% 100%, 0 100%, 5% 50%, 0 0);
+        }
+
+        input, textarea, [contenteditable] {
+            -webkit-user-select: text;
+            user-select: text;
+        }
+
+        input, select, textarea {
+            font-size: 16px !important;
+        }
+
+        .safe-top { padding-top: var(--sat); }
+        .safe-bottom { padding-bottom: var(--sab); }
+        
+        .page-transition {
+            animation: fadeIn 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Custom utility classes mapping to variables */
+        .bg-main { background-color: var(--bg-main); }
+        .bg-surface { background-color: var(--bg-surface); }
+        .bg-alt { background-color: var(--bg-alt); }
+        .bg-input { background-color: var(--bg-input); }
+        .text-main { color: var(--text-primary); }
+        .text-muted { color: var(--text-secondary); }
+        .border-main { border-color: var(--border-primary); }
+    </style>
+
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "recharts": "https://esm.sh/recharts@^3.7.0",
+    "@capacitor/cli": "https://esm.sh/@capacitor/cli@^8.1.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.41.0",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.4",
+    "vite": "https://esm.sh/vite@^7.3.1"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-BMvSAHed.js"></script>
+</head>
+<body class="light-mode">
+    <div id="root"></div>
+    <!-- Entry point for local development with Vite -->
+</body>
+</html>

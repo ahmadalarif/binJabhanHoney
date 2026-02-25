@@ -1,0 +1,8 @@
+{
+  "name": "Bin Jabhan Honey",
+  "description": "Premium Saudi Honey and Ghee e-commerce platform with native iOS and Android support.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ]
+}

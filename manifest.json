@@ -1,0 +1,23 @@
+
+{
+  "name": "Bin Jabhan Honey",
+  "short_name": "Bin Jabhan",
+  "description": "Premium Saudi Honey and Ghee",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f0f0f",
+  "theme_color": "#d4af37",
+  "icons": [
+    {
+      "src": "https://picsum.photos/seed/bj-icon-192/192/192",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://picsum.photos/seed/bj-icon-512/512/512",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
