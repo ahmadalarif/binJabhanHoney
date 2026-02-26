@@ -191,7 +191,8 @@ async function startServer() {
     app.use(viteInstance.middlewares);
   } else {
     app.use(express.static('dist'));
-    app.get('/:path(.*)', (req: Request, res: Response) => {
+    // Fallback for SPA: catch all unhandled requests and serve index.html
+    app.use((req: Request, res: Response) => {
       res.sendFile(path.join(__dirname, 'dist/index.html'));
     });
   }
