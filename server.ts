@@ -10,7 +10,13 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const PORT = Number(process.env.PORT) || 3000;
-const DATA_FILE = path.join(__dirname, 'data.json');
+const DATA_DIR = path.join(__dirname, 'data');
+const DATA_FILE = path.join(DATA_DIR, 'data.json');
+
+// Ensure data directory exists
+if (!fs.existsSync(DATA_DIR)) {
+  fs.mkdirSync(DATA_DIR, { recursive: true });
+}
 
 console.log('Starting server initialization...');
 console.log('Port:', PORT);
@@ -185,7 +191,7 @@ async function startServer() {
     app.use(viteInstance.middlewares);
   } else {
     app.use(express.static('dist'));
-     app.get('(.*)', (req: Request, res: Response) => {
+    app.get('/:path*', (req: Request, res: Response) => {
       res.sendFile(path.join(__dirname, 'dist/index.html'));
     });
   }
